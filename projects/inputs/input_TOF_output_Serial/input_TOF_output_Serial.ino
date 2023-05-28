@@ -20,7 +20,7 @@ void setup()
 void loop()
 {
 
-  // Variable "messung" in welcher Messungen des Sensors gespeichert wird
+  // Variable "messung" in welcher Messungen des Sensors gespeichert werden
   VL53L0X_RangingMeasurementData_t messung;
 
   // Mit Serial.print können wir einen Text an den Seriellen Monitor senden
@@ -28,12 +28,12 @@ void loop()
 
   // Messung und Distanz Test:
   // Das Ergebnis des Tests wird in der Variable 'messung' gespeichert
-  // Das &-Symbol vor der existierenden Variable 'messung' erlaubt es diese zu ändern
+  // Das &-Symbol vor der existierenden Variable 'messung' erlaubt es uns diese zu ändern
   // Somit finden wir das Ergebnis des Tests später in dieser Variable
   // Da uns die weiteren Details des Tests nicht interessieren geben wir außerdem 'false' an
   tof_sensor.rangingTest(&messung, false);
 
-  // Hier greifen wir auf die 'Reichweite' (eng: 'Range')
+  // Hier greifen wir auf die 'Reichweite' (eng: 'Range') der Messung zu
   // Uns interessiert nur ein Testergebnis: die Distanz in Millimetern
   // Das Ergebnis senden wir wieder an den Seriellen Monitor
   Serial.print("Distanz (mm): ");
