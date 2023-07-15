@@ -44,3 +44,7 @@ void loop()
   // für 100 Millisekunden, also 0.1 Sekunde
   delay(100);
 }
+
+
+
+// TOF muss manchmal resettet werden, dazu einfach den Knopf auf dem Arduino/Funduino drücken
