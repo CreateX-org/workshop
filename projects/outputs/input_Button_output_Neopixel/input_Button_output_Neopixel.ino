@@ -7,7 +7,7 @@ int BUTTON = 2;
 int NEOPIXEL = 3;
 
 // Anzahl der LEDs auf dem Neopixel
-int NUM_LEDS = 10;
+int NUM_LEDS = 37;
 
 // Name unseres Neopixels
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUM_LEDS, NEOPIXEL, NEO_GRB + NEO_KHZ800);

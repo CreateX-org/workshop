@@ -32,7 +32,7 @@ void loop()
   bool button_state = digitalRead(BUTTON);
   
   // Wenn der Button gedrückt ist (Pin ist HIGH)
-  if(button_state == HIGH){    
+  if(true){//if(button_state == HIGH){    
     position = position + 10;
   
   	// Wenn die position größer als 180 ist, fangen wir wieder von 0 an
